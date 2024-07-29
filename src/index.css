@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  background-color: darkgreen;
+  background-image: url(http://www.transparenttextures.com/patterns/textured-paper.png);
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+h1,td {
+  color: darkseagreen;
+  mix-blend-mode: difference;
+}
+
+.fade-in-out {
+  animation: fadeInOut 5s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
